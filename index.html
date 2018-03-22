@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Termometr</title>
+</head>
+<body>
+ 
+Температура в градусах Цельсия: <input id="Tc">
+
+<button id="Tc">Перевести температуру в градусы по Фаренгейту</button>
+ 
+<hr>
+<div id="result"></div>
+ 
+<script>
+function Fahrenheit() {
+    var Tc = document.getElementById('Tc').value;
+   
+    Tf = (9 / 5) * Tc + 32;
+    
+    var html = Tf+'  градусов по Фаренгейту' ;
+ 
+    document.getElementById('result').innerHTML = html;
+}
+ 
+document.getElementById('Tc').addEventListener('click', Fahrenheit);
+</script>
+ 
+</body>
+</html>
